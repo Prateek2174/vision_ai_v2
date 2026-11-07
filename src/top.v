@@ -5,11 +5,11 @@ module top(
     output led_2,  // READY LED
 
     // =============================================================================
-    // OV5640
+    // OV9
     // =============================================================================
         
-    inout wire cam_scl, //I2C clock to camera this is also Dislpay 2
-    inout wire cam_sda, //I2C data to camera this is also Dislpay 2
+    inout wire cam_scl, //I2C clock to camera this is also Display 2
+    inout wire cam_sda, //I2C data to camera this is also Display 2
 
     input cam_vsync, //cam vsync
 	input cam_href,  //cam hsync refrence, data valid
@@ -51,7 +51,7 @@ module top(
     wire [7:0] y_cam2;
     wire [7:0] cbcr_cam2;
 
-    dvp_capture dvp_capture_1(
+    dvp_capture dvp_capture_left(
         
         .rst_n      (rst_n),
         .pclk       (cam_pclk),
@@ -66,7 +66,7 @@ module top(
         .de_o       (cam1_16bit_wr_en)
     );
 
-    dvp_capture dvp_capture_2(
+    dvp_capture dvp_capture_right(
         
         .rst_n      (rst_n),
         .pclk       (),

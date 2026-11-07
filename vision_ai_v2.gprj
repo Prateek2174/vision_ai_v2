@@ -12,6 +12,12 @@
         <File path="src/cnn_top.v" type="file.verilog" enable="1"/>
         <File path="src/cnn_weights.v" type="file.verilog" enable="1"/>
         <File path="src/dvp_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/shift_reg.v" type="file.verilog" enable="1"/>
+        <File path="src/st_vision_argmin_tree.v" type="file.verilog" enable="1"/>
+        <File path="src/st_vision_census.v" type="file.verilog" enable="1"/>
+        <File path="src/st_vision_cost_calc.v" type="file.verilog" enable="1"/>
+        <File path="src/st_vision_top.v" type="file.verilog" enable="1"/>
+        <File path="src/st_vision_window_gen.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/top.cst" type="file.cst" enable="1"/>
     </FileList>
